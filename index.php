@@ -12,7 +12,6 @@
         <br>
         <h2>Short Story</h2>
         <p>paragraph 2</p>
-        <img src="">
         <a href="http://www.it.kmitl.ac.th">My Favorite Website</a>
 
     </body>
