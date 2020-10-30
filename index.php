@@ -9,6 +9,7 @@
         <p>Fullname: Yutthasil Butyojunto</p>
         <p>Nickname: Vee</p>
         <a href="https://www.w3schools.com/">My Favorite Website</a>
+        <p></p>
         <img src="dog.jpg" width="350" height="287">
         <br>
         <img src="blobfish.jpg" width="200" height="200">
