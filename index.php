@@ -5,6 +5,7 @@
     </head>
     <body>
         <h1>My Website</h1>
+        <hr>
         <p>Fullname: Yutthasil Butyojunto</p>
         <p>Nickname: Vee</p>
         <img src="dog.jpg" width="350" height="287">
@@ -12,7 +13,12 @@
         <img src="blobfish.jpg" width="200" height="200">
         <br>
         <h2>Short Gag</h2>
-        <p>paragraph 2</p>
+        <hr>
+        <p>Q: กินยาคุมฉุกเฉินไปครั้งที่สองประมาณอาทิตย์กว่าเเล้วประจำเดือนยังไม่มา</p>
+        <p>   พอไปซื้อที่ตรวจมาตรวจแล้วไม่ท้องเป็นเพราะประจำเดือนเลื่อนหรือป่าวคะ</p>
+        <p>   ช่วยตอบหน่อย</p>
+        <p>A: ไม่ท้องก็ดีแล้วครับ แต่ถ้าถามว่า ประจำเดือนเลื่อนมั้ย ถ้าใส่เบรคมือไว้ หรือ</p> 
+        <p>   เข้าเกียร์ P ก็ไม่น่าจะเลื่อนนะครับ</p>
         <a href="https://www.w3schools.com/">My Favorite Website</a>
     </body>
 </html>
