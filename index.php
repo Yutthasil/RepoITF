@@ -7,13 +7,12 @@
         <h1>My Website</h1>
         <p>Fullname: Yutthasil Butyojunto</p>
         <p>Nickname: Vee</p>
-        <img src="dog.jpg">
+        <img src="dog.jpg" width="350" height="287">
         <br>
-        <img src="cat.jpg">
+        <img src="blobfish.jpg" width="200" height="200">
         <br>
-        <h2>Short Story</h2>
+        <h2>Short Gag</h2>
         <p>paragraph 2</p>
-        <a href="https://www.youtube.com/">My Favorite Website</a>
-
+        <a href="https://www.w3schools.com/">My Favorite Website</a>
     </body>
 </html>
