@@ -19,7 +19,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
         <th width="150"> <div align="center">Link </div></th>
     </tr>
 <?php
-while($Result = )mysqli_fetch_array($res))
+while($Result = mysqli_fetch_array($res))
 {
 ?>
     <tr>
