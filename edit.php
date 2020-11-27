@@ -13,9 +13,11 @@ $Result = mysqli_fetch_array($res);
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Comment Form</title>
+    <title>Comment Form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+<div class="container">
     <form action = "update.php?id=<?php echo $Result['ID']; ?>" method = "post" id="CommentForm" >
         Product:<br>
         <input type="text" name="product" id="idProduct" value="<?php echo $Result['product'];?>"> <br>
@@ -24,6 +26,8 @@ $Result = mysqli_fetch_array($res);
         Amount:<br>
         <input type="text" name="amount" id="idAmount" value="<?php echo $Result['amount'];?>"> <br><br>
         <input type="submit" id="commentBtn">
-  </form>
+    </form>
+</div>
+    
 </body>
 </html>
