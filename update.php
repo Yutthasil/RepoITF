@@ -13,7 +13,7 @@ $price = $_POST['price'];
 $amount = $_POST['amount'];
 
 
-$sql = "UPDATE guestbook SET product='$product', price='$price', amount='$amount', total='$amount'*'$price' WHERE id=$id";
+$sql = "UPDATE pricecal SET product='$product', price='$price', amount='$amount', total='$amount'*'$price' WHERE id=$id";
 
 
 if (mysqli_query($conn, $sql)) {
