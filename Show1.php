@@ -6,21 +6,22 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'itflabdatabase.mysql.database.azure.com', 'Yutthasil@itflabdatabase', 'KDByeq34', 'itflab', 3306);
+mysqli_real_connect($conn, 'itflabdatabase.mysql.database.azure.com', 'Yutthasil@itflabdatabase', 'KDByeq34', 'Labfinal', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
-$res = mysqli_query($conn, 'SELECT * FROM guestbook');
+$res = mysqli_query($conn, 'SELECT * FROM pricecal');
 ?>
 <div class="container">
     <table class="table" border='1'>
         <thead class="thead-dark">
             <tr>
-                <th width="100"> <div align="center">Name</div></th>
-                <th width="350"> <div align="center">Comment </div></th>
-                <th width="150"> <div align="center">Link </div></th>
-                <th width="200"> <div align="center">Action</div></th>
+                <th width="150"> <div align="center">Product</div></th>
+                <th width="150"> <div align="center">Price </div></th>
+                <th width="150"> <div align="center">Amount </div></th>
+                <th width="150"> <div align="center">Total</div></th>
+                <th width="100"></th>
             </tr>
         </thead>
     <?php
@@ -28,12 +29,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     {
     ?>
         <tr>
-            <td><?php echo $Result['Name'];?></div></td>
-            <td><?php echo $Result['Comment'];?></td>
-            <td><a href="<?php echo $Result['Link']; ?>"><?php echo $Result['Link']; ?></a></td>
-            <td><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>'?> <br>
-            <?php echo '<a href="edit.php?id='.$Result['ID'].'" class="btn btn-info">Update</a>'?>
-            </td>
+            <td><?php echo $Result['product'];?></div></td>
+            <td><?php echo $Result['price'];?></td>
+            <td><?php echo $Result['amount']; ?></td>
+            <td><?php echo $Result['total']; ?></td>
+            <td><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>'?></td>
         </tr>
     <?php
     }
