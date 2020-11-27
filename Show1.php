@@ -33,7 +33,9 @@ $res = mysqli_query($conn, 'SELECT * FROM pricecal');
             <td><?php echo $Result['price'];?></td>
             <td><?php echo $Result['amount']; ?></td>
             <td><?php echo $Result['total']; ?></td>
-            <td><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>'?></td>
+            <td><?php echo '<a href="delete.php?id='.$Result['ID'].'" class="btn btn-danger">Delete</a>'?><br>
+            <?php echo '<a href="edit.php?id='.$Result['ID'].'" class="btn btn-info">Update</a>'?>
+            </td>
         </tr>
     <?php
     }
