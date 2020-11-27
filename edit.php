@@ -19,12 +19,18 @@ $Result = mysqli_fetch_array($res);
 <body>
 <div class="container">
     <form action = "update.php?id=<?php echo $Result['ID']; ?>" method = "post" id="CommentForm" >
-        Product:<br>
-        <input type="text" name="product" id="idProduct" value="<?php echo $Result['product'];?>"> <br>
-        Price:<br>
-        <input type="text" name ="price" id="idPrice" value="<?php echo $Result['price'];?>"><br>
-        Amount:<br>
-        <input type="text" name="amount" id="idAmount" value="<?php echo $Result['amount'];?>"> <br><br>
+        <div class="form-group">
+            Product:<br>
+            <input type="text" name="product" id="idProduct" value="<?php echo $Result['product'];?>"> <br>
+        </div>
+        <div class="form-group">
+            Price:<br>
+            <input type="text" name ="price" id="idPrice" value="<?php echo $Result['price'];?>"><br>
+        </div>
+        <div class="form-group">
+            Amount:<br>
+            <input type="text" name="amount" id="idAmount" value="<?php echo $Result['amount'];?>"> <br><br>
+        </div>
         <input type="submit" id="commentBtn">
     </form>
 </div>
