@@ -21,7 +21,7 @@ $res = mysqli_query($conn, 'SELECT * FROM pricecal');
                 <th width="150"> <div align="center">Price </div></th>
                 <th width="150"> <div align="center">Amount </div></th>
                 <th width="150"> <div align="center">Total</div></th>
-                <th width="100"></th>
+                <th width="100"><div align="center">Action</div></th>
             </tr>
         </thead>
     <?php
